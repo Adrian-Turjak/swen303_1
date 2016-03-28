@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<div id="navbar_refine" class="navbar">
+        <form class="navbar-form navbar-left" role="search" id="refine_form" action="" method="post">
+	        <div class="form-group" id="refine_group">
+	          <input type="text" name="xquery" class="form-control" placeholder="Refine Search" id="refine_input">
+	        </div>
+	        <div class="btn-group"> 
+	            <button type="submit" class="btn btn-default" id="refine_button">Submit</button>
+	        </div>
+        </form>
+    </div>
+{% if error %}
+	<div class="alert alert-danger" role="alert">
+	  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+	  <span class="sr-only">Error:</span>
+	  Malformed Search.
+	</div>
+{% elif results %}
+	{% if clean %}
+		{% for result in results %}
+			
+			<a href="/letters/{{ result.doc }}">
+		    <div class="result">
+				<h2>{{ result.title }}</h2>
+				<h3>author: {{ result.author }}</h2>
+				<hr>
+				<pre>{{ result.element }}</pre>
+		    </div>
+		    </a>
+		{%endfor%} 
+	{% elif split %}
+		{% for result in results %}
+		    <div class="result">
+				{{ result|safe }}
+				<hr>
+				<textarea readonly>{{ result }}</textarea>
+		    </div>
+		{%endfor%} 
+	{% else %}
+		<div class="result">
+			{{ results|safe }}
+			<hr>
+			<textarea readonly>{{ results }}</textarea>
+	    </div>
+	{% endif %}
+{% else %}
+	<div class="alert alert-danger" role="alert">
+	  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+	  <span class="sr-only">Error:</span>
+	  No matches found.
+	</div>
+{% endif %}
+    
+{% endblock %}

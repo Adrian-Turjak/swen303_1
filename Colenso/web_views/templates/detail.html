@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<div class="result">
+	    {{ results|safe}}
+	    <hr>
+	    <textarea readonly>{{ results }}</textarea>
+    </div>  
+{% endblock %}
