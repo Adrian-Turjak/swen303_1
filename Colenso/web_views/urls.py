@@ -18,5 +18,8 @@ from web_views import views
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
-    url(r'^letters/(?P<l_id>\w+)', views.letter_detail, name='index'),
+    url(r'^search[/]$', views.search, name='search'),
+    url(r'^search/history[/]$', views.search_history),
+    url(r'^search/history/mine[/]$', views.my_search_history),
+    url(r'^letters/(?P<l_id>\w+)', views.letter_detail),
 ]

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% if history %}
+	{% for search in history %}
+		
+		<a href="{{ search.url }}" style="text-decoration: none">
+	    <div class="result clean">
+			<h3>{{ search.date }}</h2>
+			<hr>
+			<pre>{{ search.search }}</pre>
+	    </div>
+	    </a>
+	{%endfor%} 
+{% else %}
+	<div class="alert alert-danger" role="alert">
+	  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+	  <span class="sr-only">Error:</span>
+	  No searches found. Go make some!
+	</div>
+{% endif %}
+    
+{% endblock %}

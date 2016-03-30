@@ -151,6 +151,12 @@ p {
 	background-color: #76823C;
 }
 
+hr{
+	border-top: 3px solid #91a23c;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
 
 .result {
 	border-radius: 10px;
@@ -158,6 +164,7 @@ p {
 	padding: 10px 30px;
 	min-width:250px;
 	margin-top: 20px;
+	margin-bottom: 30px;
 }
 
 .result h2 {
@@ -174,6 +181,38 @@ p {
 	width: 100%;
 	border-radius: 5px;
 	border: 1px solid #91a23c;
+	margin-bottom: 15px;
+}
+
+.result hr{
+	border-top: 1px solid #91a23c;
+}
+
+.clean:hover{
+	background-color: rgba(145, 162, 60, 0.30);
+}
+
+.clean pre{
+	background-color: rgba(245, 245, 245, 0.25);
+}
+
+.clean h2{
+    color: #5A5A5A;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    clear: both;
+    text-transform: capitalise;
+}
+
+.clean h3{
+    color: #7D7D7D;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    clear: left;
+    font-weight: bold;
+    text-transform: capitalise;
 }
 
 html {
