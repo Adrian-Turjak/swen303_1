@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="result large_search">
+    	<h3>Edit Letter</h3>
+    	<p>Please Ensure the letters are in the TEI format. If not they may not be correctly indexed and searchable.</p>
+    	<br>
+  		<form id="" action="" method="post">
+			<div class="form-group">
+			    <label for="xml">Letter XML:</label>
+				<textarea style="height: 400px;" id="xml" name="xml" class="form-control" rows="20" placeholder="paste xml here">{{ results }}</textarea>
+			</div>
+			<div class="btn-group"> 
+	            <button type="submit" class="btn btn-default" id="refine_button">Submit</button>
+	        </div>
+        </form>
+    </div>    
+{% endblock %}

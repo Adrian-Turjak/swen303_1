@@ -6,7 +6,8 @@
 		
 		<a href="{{ search.url }}" style="text-decoration: none">
 	    <div class="result clean">
-			<h3>{{ search.date }}</h2>
+			<h2>{{ search.date }}</h2>
+			<h3>completed without errors: {{ search.successful }}</h3>
 			<hr>
 			<pre>{{ search.search }}</pre>
 	    </div>

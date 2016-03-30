@@ -215,6 +215,13 @@ hr{
     text-transform: capitalise;
 }
 
+.large_search {
+	margin-top: 50px;
+	padding-top: 20px;
+}
+
+
+
 html {
   position: relative;
   min-height: 100%;

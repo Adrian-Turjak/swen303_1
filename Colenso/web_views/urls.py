@@ -18,8 +18,11 @@ from web_views import views
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
+    url(r'^add_letter$', views.add_letter),
     url(r'^search[/]$', views.search, name='search'),
+    url(r'^search/large[/]$', views.large_search),
     url(r'^search/history[/]$', views.search_history),
     url(r'^search/history/mine[/]$', views.my_search_history),
-    url(r'^letters/(?P<l_id>\w+)', views.letter_detail),
+    url(r'^letters/(?P<l_id>\w+)/edit[/]$', views.edit_letter),
+    url(r'^letters/(?P<l_id>\w+)[/]$', views.letter_detail),
 ]

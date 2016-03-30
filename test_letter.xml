@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="PrLTur-0001">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>2016 March 30: Adrian to BaseX</title>
+				<author>
+					<name type="person" key="http://wtap.vuw.ac.nz/eats/entity/70546/">Adrian Turjak</name>
+				</author>
+			</titleStmt>
+			<publicationStmt>
+			</publicationStmt>
+			<sourceDesc>
+				<p>encoded into TEI by Adrian Turjak, 30.3.16</p>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<correspDesc>
+				<correspAction type="sent">
+					<date when="2016-03-30">2016 March 30</date>
+				</correspAction>
+				<correspAction type="received">
+					<name type="person" key="http://basex.org/">BaseX</name>
+				</correspAction>
+			</correspDesc>
+		</profileDesc>
+	</teiHeader>
+	<text>
+		<front>
+			<p>2016 March 30: Adrian to BaseX </p>
+		</front>
+		<body>
+			<p>My dear BaseX </p>
+			<p>You are terrible database. I can understand your purpose, but you make my time here simply unbearable.</p>
+			<p>You and your posse of "X" related products disgust me. I find your lack of human readability appalling and distastful. Your query language confuses me, and while I do attest to being far more farmiliar to both SQL and noSQL in the forms of MongoDB, your brand of querying just dumbfounds me.</p>
+			<p>After this letter, you will never again hear from me. I will not touch you, look upon you, nor even acknowledge your existence.</p>
+			<p>Adrian Turjak </p>
+			<p>30 March 2016</p>
+		</body>
+	</text>
+</TEI>
+
+
+Colenso/Turjak/private_letters/PrLTur-0001.xml
