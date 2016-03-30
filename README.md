@@ -2,6 +2,8 @@
 
 My advice is not to try running this at uni. The uni computers do not allow you sudo access to install python packages via pip, and pacman does not have up-to-date python packages. Pip + venv would be ideal, but we can't install venv either.
 
+Development was done in a ubuntu 14.04 virtual machine.
+
 If you do want to run it, this is just a standard Django app, and there is a requirements file (although some of those do pre-depend on certain system libraries and may throw installer errors). If you need help getting it to run, email me.
 
 If you just want to see the site and play with it. Click the hosted_demo.html file and it will redirect you to a hosted demo of the site. If for some reason that isn't working, poke me and I'll check it. Url is also: http://150.242.40.236/
